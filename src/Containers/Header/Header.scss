@@ -1,0 +1,78 @@
+header {
+  min-height: 100vh;
+  background: url("../../assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .header-info {
+    width: 34%;
+    color: white;
+
+    position: absolute;
+    top: 44%;
+    left: 20%;
+    transform: translate(-20%, -44%);
+
+    .sub-heading {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #f3f3f3;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1.3rem;
+    }
+
+    .para {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .course-btn {
+      a:first-child {
+        margin-right: 0.5rem;
+
+        @media screen and (max-width: 500px) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 63%;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      padding: 0 1rem;
+
+      .heading {
+        font-size: 2.1rem;
+      }
+
+      .para {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media screen and (max-width: 300px) {
+      .heading {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    background-position: 63% center;
+  }
+}
