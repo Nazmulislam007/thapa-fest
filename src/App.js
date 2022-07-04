@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react";
+import { Banner } from "./Components";
 import { About, Header } from "./Containers";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <About />
+      <Banner />
     </>
   );
 }

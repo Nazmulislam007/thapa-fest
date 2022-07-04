@@ -1,0 +1,54 @@
+.banner {
+  width: 100%;
+  padding: 7%;
+  min-height: 45vh;
+  background-image: linear-gradient(to left, #00000076, #00000067),
+    url("../../assets/banner.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
+
+  .count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    svg {
+      color: white;
+      font-size: 4rem;
+
+      path {
+        stroke: white;
+      }
+    }
+
+    div {
+      margin-left: 1rem;
+
+      .countup {
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        color: white;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 12%;
+  }
+}
