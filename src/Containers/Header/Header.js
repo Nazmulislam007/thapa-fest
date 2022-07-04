@@ -11,7 +11,9 @@ const Header = () => {
       <header id="home">
         <motion.div whileInView={{ opacity: [0, 1] }} className="header-info">
           <p className="sub-heading">welcome to learning-bd</p>
-          <h1 className="heading">Best Online Education Expertise</h1>
+          <h1 className="heading" style={{ textAlign: "start" }}>
+            Best Online Education Expertise
+          </h1>
           <p className="para">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts.

@@ -29,6 +29,10 @@ const About = () => {
     },
   ];
 
+  const styles = {
+    textAlign: "start",
+  };
+
   return (
     <>
       <div id="about">
@@ -41,8 +45,12 @@ const About = () => {
           whileInView={{ x: [100, 0], opacity: [0, 1] }}
           className="about-desc"
         >
-          <p className="title">learn anything</p>
-          <h1 className="heading">Benefits About Online Learning Expertise</h1>
+          <p className="title" style={styles}>
+            learn anything
+          </p>
+          <h1 className="heading" style={styles}>
+            Benefits About Online Learning Expertise
+          </h1>
           {desc.map(({ id, icon, heading, para }) => (
             <div key={id} className="about-card">
               {icon}
