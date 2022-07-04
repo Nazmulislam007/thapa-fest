@@ -8,17 +8,18 @@ const Navbar = () => {
   const navbar = useRef();
 
   useEffect(() => {
-    window.onscroll = () => {
+    window.addEventListener("scroll", () => {
       if (
         document.body.scrollTop > 650 ||
         document.documentElement.scrollTop > 650
       ) {
+        console.log("hellow");
         navbar.current.classList.add("scroll-nav");
       } else {
         navbar.current.classList.remove("scroll-nav");
       }
       setToggle(false);
-    };
+    });
   }, []);
 
   return (
