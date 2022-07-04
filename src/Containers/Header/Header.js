@@ -2,13 +2,14 @@ import React from "react";
 import { Navbar } from "../../Components";
 import "./Header.scss";
 import { BsArrowRight } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
     <>
       <Navbar />
-      <header>
-        <div className="header-info">
+      <header id="home">
+        <motion.div whileInView={{ opacity: [0, 1] }} className="header-info">
           <p className="sub-heading">welcome to learning-bd</p>
           <h1 className="heading">Best Online Education Expertise</h1>
           <p className="para">
@@ -29,10 +30,9 @@ const Header = () => {
               </span>
             </a>
           </p>
-        </div>
+        </motion.div>
       </header>
     </>
   );
 };
-
 export default Header;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,8 @@
 
 :root {
   --primary-darker: #199ac4;
+  --tran03: all 0.3s ease-in-out;
+  --tran02: all 0.2s ease-in-out;
 }
 
 a {
@@ -18,10 +21,28 @@ li {
   list-style: none;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.09);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-darker, rgb(113, 113, 113));
+  border-radius: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f5f5f5;
 }
 
 .btn {
@@ -37,6 +58,7 @@ body {
   span {
     margin-left: 1rem;
     font-size: 1rem;
+    transition: var(--tran03);
 
     svg {
       margin-bottom: -1.6px;
@@ -45,6 +67,10 @@ body {
 
   &:hover {
     box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+
+    span {
+      margin-left: 2rem;
+    }
   }
 }
 
@@ -56,4 +82,47 @@ body {
 .btn-white {
   color: var(--primary-darker);
   background: white;
+}
+
+.container {
+  max-width: 1400px;
+  width: 98%;
+  margin: 4rem auto;
+  overflow: hidden;
+}
+
+.title {
+  color: var(--primary-darker);
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.heading {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #525252;
+}
+
+.card-para {
+  font-size: 1rem;
+  color: #8d8d8d;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }

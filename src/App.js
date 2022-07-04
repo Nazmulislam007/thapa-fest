@@ -1,7 +1,13 @@
-import { Header } from "./Containers";
+// import { useEffect, useState } from "react";
+import { About, Header } from "./Containers";
 
 function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <About />
+    </>
+  );
 }
 
 export default App;

@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import "./Navbar.scss";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const navbar = useRef();
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 650 ||
+        document.documentElement.scrollTop > 650
+      ) {
+        navbar.current.classList.add("scroll-nav");
+      } else {
+        navbar.current.classList.remove("scroll-nav");
+      }
+      setToggle(false);
+    };
+  }, []);
 
   return (
-    <nav>
-      <a className="navbar-brand" href="/">
+    <nav ref={navbar}>
+      <a className="navbar-brand" href="#home">
         Learning-BD
         <small>Online Education & Learing</small>
       </a>
