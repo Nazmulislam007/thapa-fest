@@ -84,6 +84,22 @@ body {
   background: white;
 }
 
+.btn-enroll {
+  text-align: center;
+  width: 100%;
+  border: 1px solid var(--primary-darker);
+  color: var(--primary-darker);
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: var(--tran03);
+  padding: 1rem;
+
+  &:hover {
+    background: var(--primary-darker);
+    color: white;
+  }
+}
+
 .container {
   max-width: 1400px;
   width: 96%;

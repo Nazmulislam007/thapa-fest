@@ -1,6 +1,13 @@
 // import { useEffect, useState } from "react";
 import { Banner } from "./Components";
-import { About, Explore, Header, Services, Testimonial } from "./Containers";
+import {
+  About,
+  Explore,
+  Header,
+  Pricing,
+  Services,
+  Testimonial,
+} from "./Containers";
 
 function App() {
   return (
@@ -11,6 +18,7 @@ function App() {
       <Services />
       <Explore />
       <Testimonial />
+      <Pricing />
     </>
   );
 }

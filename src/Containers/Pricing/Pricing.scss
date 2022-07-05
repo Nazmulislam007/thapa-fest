@@ -1,0 +1,56 @@
+#price {
+  margin-top: 4rem;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    .card {
+      text-align: center;
+      padding: 2.5rem 4rem;
+      background-color: white;
+      transition: var(--tran03);
+
+      &:hover {
+        box-shadow: 0 0 25px rgb(230, 230, 230);
+      }
+
+      & > *:not(:last-child, ) {
+        margin-bottom: 1rem;
+      }
+
+      .plan {
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .price {
+        font-size: 2.2rem;
+        color: var(--primary-darker);
+        margin-bottom: 2rem;
+
+        span {
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+
+      .card-para {
+        line-height: 1.8;
+      }
+
+      .btn-enroll {
+        width: 80%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 1rem;
+
+    .wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+  }
+}

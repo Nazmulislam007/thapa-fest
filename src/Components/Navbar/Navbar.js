@@ -28,7 +28,7 @@ const Navbar = () => {
         <small>Online Education & Learing</small>
       </a>
       <ul className={`navbar-nav ${toggle ? "active" : ""}`}>
-        {["Home", "About", "Course", "FAQ", "Contact"].map((item) => (
+        {["Home", "About", "Course", "Price", "Contact"].map((item) => (
           <li key={item} onClick={() => setToggle(false)} className="nav-item">
             <a className="nav-link" href={`#${item.toLowerCase()}`}>
               {item}
