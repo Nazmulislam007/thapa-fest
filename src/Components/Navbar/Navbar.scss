@@ -15,28 +15,6 @@ nav {
   backdrop-filter: blur(2px);
   transition: all 0.5s;
 
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-transform: uppercase;
-
-    small {
-      font-size: 0.9rem;
-    }
-
-    @media screen and (max-width: 700px) {
-      font-size: 1.4rem;
-
-      small {
-        font-size: 0.75rem;
-      }
-    }
-  }
-
   .navbar-nav {
     display: flex;
     flex-direction: row;

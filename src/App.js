@@ -1,8 +1,9 @@
 // import { useEffect, useState } from "react";
-import { Banner, NewsLetter } from "./Components";
+import { Banner, Copyw, NewsLetter } from "./Components";
 import {
   About,
   Explore,
+  Footer,
   Header,
   Pricing,
   Services,
@@ -20,6 +21,8 @@ function App() {
       <Testimonial />
       <Pricing />
       <NewsLetter />
+      <Footer />
+      <Copyw />
     </>
   );
 }

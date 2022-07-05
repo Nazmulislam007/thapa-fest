@@ -1,0 +1,11 @@
+.copy-write {
+  padding: 3rem;
+  background: rgb(232, 232, 232);
+  p {
+    text-align: center;
+
+    span {
+      color: var(--primary-darker);
+    }
+  }
+}
