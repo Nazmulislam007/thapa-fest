@@ -13,7 +13,6 @@ const Navbar = () => {
         document.body.scrollTop > 650 ||
         document.documentElement.scrollTop > 650
       ) {
-        console.log("hellow");
         navbar.current.classList.add("scroll-nav");
       } else {
         navbar.current.classList.remove("scroll-nav");

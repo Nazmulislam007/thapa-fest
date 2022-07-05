@@ -10,6 +10,7 @@ import bus from "./bus.png";
 import web from "./web.png";
 import mar from "./mar.png";
 import gra from "./gra.png";
+import user from "./user.jpg";
 
 const img = {
   art,
@@ -24,6 +25,7 @@ const img = {
   web,
   mar,
   gra,
+  user,
 };
 
 export default img;

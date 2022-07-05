@@ -1,0 +1,102 @@
+#explore {
+  margin-top: 3rem;
+
+  .wrapper {
+    .swiper-slide {
+      padding: 2rem 1.5rem;
+      background: white;
+      box-shadow: 0 0 25px rgb(233, 233, 233);
+
+      .slide-header {
+        display: flex;
+        align-items: flex-start;
+
+        & > img {
+          padding: 1rem;
+          background: rgb(255, 255, 255);
+          box-shadow: 0 0 25px rgb(228, 228, 228);
+          border-radius: 20px;
+        }
+
+        .slide-heading {
+          margin-left: 1.5rem;
+
+          .card-heading {
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+          }
+
+          .rating {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: var(--primary-darker);
+            margin-bottom: 0.5rem;
+
+            p {
+              margin-left: 0.4rem;
+            }
+          }
+
+          .user {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+
+            span {
+              font-size: 0.8rem;
+              font-weight: 500;
+              color: rgb(118, 118, 118);
+              margin-left: 0.5rem;
+            }
+          }
+
+          .lecture-desc {
+            color: var(--primary-darker);
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .price {
+        padding: 1rem;
+        background: rgb(244, 244, 244);
+        margin-top: 2rem;
+        text-align: center;
+        color: var(--primary-darker);
+        font-weight: 500;
+        border-radius: 5px;
+        transition: var(--tran03);
+
+        &:hover {
+          box-shadow: 0 0 15px rgba(233, 233, 233, 0.175);
+        }
+      }
+
+      .btn-enroll {
+        text-align: center;
+        width: 100%;
+        border: 1px solid var(--primary-darker);
+        color: var(--primary-darker);
+        font-weight: 500;
+        margin-top: 1rem;
+        transition: var(--tran03);
+        padding: 1rem;
+
+        &:hover {
+          background: var(--primary-darker);
+          color: white;
+        }
+      }
+    }
+  }
+}
