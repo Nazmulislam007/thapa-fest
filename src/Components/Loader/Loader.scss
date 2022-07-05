@@ -1,0 +1,21 @@
+.loader {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  svg {
+    font-size: 3rem;
+    color: var(--primary-darker);
+
+    animation: rotates 3s linear infinite;
+  }
+
+  @keyframes rotates {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
