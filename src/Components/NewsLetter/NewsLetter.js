@@ -5,7 +5,7 @@ import { IoIosSend } from "react-icons/io";
 
 const NewsLetter = () => {
   return (
-    <div className="newsletter">
+    <div id="contact" className="newsletter">
       <motion.div
         className="container"
         whileInView={{ x: [100, 0], opacity: [0, 1] }}
