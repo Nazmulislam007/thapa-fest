@@ -1,0 +1,48 @@
+#testimonial {
+  margin-top: 4rem;
+
+  .wrapper {
+    .swiper-slide {
+      padding: 2rem;
+      background: white;
+
+      &:nth-child(2n + 1) {
+        background: var(--primary-darker);
+
+        .slide-header {
+          & > div :is(h1, p) {
+            color: white;
+          }
+        }
+
+        .card-para {
+          color: white;
+        }
+      }
+
+      .slide-header {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+
+        & > div {
+          margin-left: 1.5rem;
+        }
+      }
+
+      .card-para {
+        margin-top: 2rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 1rem;
+  }
+}

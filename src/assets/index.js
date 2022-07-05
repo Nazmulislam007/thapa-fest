@@ -11,6 +11,8 @@ import web from "./web.png";
 import mar from "./mar.png";
 import gra from "./gra.png";
 import user from "./user.jpg";
+import user1 from "./user1.jpg";
+import user2 from "./user2.jpg";
 
 const img = {
   art,
@@ -26,6 +28,8 @@ const img = {
   mar,
   gra,
   user,
+  user1,
+  user2,
 };
 
 export default img;

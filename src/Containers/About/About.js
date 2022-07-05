@@ -31,6 +31,7 @@ const About = () => {
 
   const styles = {
     textAlign: "start",
+    marginBottom: "2rem",
   };
 
   return (
@@ -45,7 +46,7 @@ const About = () => {
           whileInView={{ x: [100, 0], opacity: [0, 1] }}
           className="about-desc"
         >
-          <p className="title" style={styles}>
+          <p className="title" style={{ textAlign: "start" }}>
             learn anything
           </p>
           <h1 className="heading" style={styles}>
