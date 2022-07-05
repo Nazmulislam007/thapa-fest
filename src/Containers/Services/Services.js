@@ -2,6 +2,7 @@ import React from "react";
 import "./Services.scss";
 import MotionWrapper from "../../wrapper/MotionWrapper";
 import img from "../../assets";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const info = [
@@ -24,11 +25,16 @@ const Services = () => {
       <h1 className="heading">Browse Our Online Courses</h1>
       <a href="/" className="course__container">
         {info.map(({ id, img, title }) => (
-          <div key={id} className="box">
+          <motion.div
+            whileInView={{ x: [100, 0], opacity: [0, 1], type: "tween" }}
+            transition={{ duration: 0.3 }}
+            key={id}
+            className="box"
+          >
             <img src={img} alt={title} />
             <p className="box__heading">{title}</p>
             <p className="box__count">25 Courses</p>
-          </div>
+          </motion.div>
         ))}
       </a>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import MotionWrapper from "../../wrapper/MotionWrapper";
 import "./Pricing.scss";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const info = [
@@ -36,7 +37,12 @@ const Pricing = () => {
 
       <div className="wrapper">
         {info.map(({ id, plan, price, desc }) => (
-          <div key={id} className="card">
+          <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.3 }}
+            key={id}
+            className="card"
+          >
             <p className="plan">{plan}</p>
             <h1 className="price">
               <span>$</span>
@@ -46,7 +52,7 @@ const Pricing = () => {
             <a href="/" className="btn btn-enroll">
               Get Started
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
