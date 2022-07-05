@@ -1,5 +1,5 @@
 // import { useEffect, useState } from "react";
-import { Banner } from "./Components";
+import { Banner, NewsLetter } from "./Components";
 import {
   About,
   Explore,
@@ -19,6 +19,7 @@ function App() {
       <Explore />
       <Testimonial />
       <Pricing />
+      <NewsLetter />
     </>
   );
 }
